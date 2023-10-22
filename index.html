@@ -27,17 +27,7 @@
 
 <body>
 
-    <head>
-        <style>
-            body {
-                background-image: url('assets/images/About/bgd.jpg'); /* Replace 'your-image-url.jpg' with your image file path or URL */
-                background-size: cover; /* Ensures the image covers the entire background */
-                background-repeat: no-repeat; /* Prevents the image from repeating */
-                background-attachment: fixed; /* Makes the image fixed so it doesn't scroll with the content */
-            }
-            
-        </style>
-    </head>
+    
     <!-------------------- Scroll-Top Area (Start) -------------------->
     <a href="#home" class="scroll-top">
         <i class="fas fa-angle-up"></i>
@@ -61,8 +51,7 @@
             <a href="#home">home</a>
             <a href="#about">about</a>
             <a href="#service">service</a>
-            <a href="#portfolio">portfolio</a>
-            <a href="#testimonial">testimonials</a>
+            <a href="#photos">Photos</a>
             <a href="#blog">blogs</a>
             <a href="#contact">contact</a>
         </nav>
@@ -74,21 +63,32 @@
     <!-------------------- Header Area (End) -------------------->
 
     <style>
+    body {
+        background-image: url('assets/images/About/bgn.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .home {
+        background-image: url('assets/images/About/bgp.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* Your existing styles for the home section */
+
+        /* Media query to adjust background size for smaller screens */
+        @media (max-width: 768px) {
+            background-size: auto;
+        }
+    }
+
+    /* Media query to adjust body background size for smaller screens */
+    @media (max-width: 768px) {
         body {
-            background-image: url('assets/images/About/bgn.jpg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-size: auto;
         }
-    
-        .home {
-            background-image: url('assets/images/About/bgp.jpg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            /* Your existing styles for the home section */
-        }
-    </style>
+    }
+</style>
+
     
 
     <!-------------------- Home Area (Start) -------------------->
