@@ -221,6 +221,14 @@ header #menu-btn:hover{
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
 
+/* CSS for the logo image */
+.logo {
+    width: 150px; /* Set the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default inline styles */
+    margin: 0 auto; /* Center the logo horizontally */
+    /* Add other styles like margin, padding, border, etc. as needed */
+}
 
 
 /*--------------------- 4- Home Area CSS (Start) ---------------------*/
