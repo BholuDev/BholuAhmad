@@ -37,10 +37,10 @@
 
 
     <!-------------------- Header Area (Start) -------------------->
-    <header class="header" style="display: flex; justify-content: space-between; align-items: center;">
+   <header class="header" style="display: flex; justify-content: space-between; align-items: center;">
     <!-- Logo -->
     <a class="logo" href="#home" style="flex: 1;">
-        <img src="assets/images/logo.png" alt="Logo">
+        <img src="assets/images/logo.png" alt="Logo" style="max-width: 100%; height: auto; max-height: 32px; width: auto;" id="logo-image">
     </a>
     <!-- Logo End -->
 
@@ -54,6 +54,18 @@
         <a href="#contact">contact</a>
     </nav>
 </header>
+
+<style>
+    @media (max-width: 480px) {
+        #logo-image {
+            max-width: 300px;
+            max-height: 32px;
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+
 
 
         <!-- Menubar -->
