@@ -22,7 +22,6 @@
     <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
-    <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="jquery.flipster.min.css">
 
@@ -278,17 +277,7 @@
                 </div>
             </div>
 
-            <form method="post" class="contact-form" id="contactUs-Form">
-
-                <input type="text" name="name" class="box" id="name" placeholder="name" required />
-                <input type="email" name="email" class="box" id="email" placeholder="email" required />
-                <input type="text" name="subject" class="box" id="subject" placeholder="subject" required />
-                <textarea cols="30" rows="10" name="comment" id="comment" class="box" placeholder="message"></textarea>
-                <button type="submit" class="btn" name="submit" id="submit">send message</button>
-
-                <span class="alert" id="msg"></span>
-
-            </form>
+           
 
         </div>
 
@@ -327,7 +316,7 @@
     <script src="../assets/vendors/typed/typed.js"></script>
 
     <!-- Custom Script File -->
-    <script src="../assets/js/script2.js"></script>
+    <script src="script2.js"></script>
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/scroll-spy.js"></script>
     <script src="../assets/js/counter-up.js"></script>
@@ -335,14 +324,7 @@
     <script src="../assets/js/testi-slider.js"></script>
     <script src="../assets/js/blog-slider.js"></script>
     <!--Images 3d Carousel Script by Bholu-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="jquery.flipster.min.js"></script>
-    <script>
-        $('.carousel').flipster({
-            style:'carousel',
-            spacing: -0.3,
-        });
-    </script>
+  
 
     <!---------------- Custom Script ---------------->
 
@@ -357,25 +339,7 @@
     </script>
 
     <!-- Contact-Form Script -->
-    <script>
-        jQuery('#contactUs-Form').on('submit', function (e) {
-            jQuery('#msg').html('');
-            jQuery('#submit').html('Please wait');
-            jQuery('#submit').attr('disabled', true);
-            jQuery.ajax({
-                url: 'assets/php/submit.php',
-                type: 'post',
-                data: jQuery('#contactUs-Form').serialize(),
-                success: function (result) {
-                    jQuery('#msg').html(result);
-                    jQuery('#submit').html('Submit');
-                    jQuery('#submit').attr('disabled', false);
-                    jQuery('#contactUs-Form')[0].reset();
-                }
-            });
-            e.preventDefault();
-        });
-    </script>
+    
 
 </body>
 
