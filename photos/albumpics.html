@@ -8,21 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>Bholu Ahmad - Album Photos</title>
+    <title>Album Photos of Bholu Ahmad</title>
 
     <!-- Font-Awesome CSS -->
-    <link rel="stylesheet" href="../assets/vendors/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="../assets/vendors/swiper/swiper.css" />
+    <link rel="stylesheet" href="assets/vendors/swiper/swiper.css" />
 
     <!-- Magnific-Popup CSS -->
-    <link rel="stylesheet" href="../assets/vendors/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/magnific-popup.css" />
 
     <!-- Custom Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="../assets/css/responsive.css" />
-     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="jquery.flipster.min.css">
 
 </head>
@@ -42,10 +43,13 @@
     <header class="header">
 
         <!-- Logo -->
-       <<a class="logo" href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-    <img src="../assets/images/IMG_4021.png" alt="Logo" style="width: 300px; height: 70px; margin-right: 10px;">
-    
-</a>
+        <<a class="logo" href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+            <img src="../assets/images/IMG_4021.png" alt="Logo" style="width: 300px; height: 70px; margin-right: 10px;">
+            
+        </a>
+        
+            <!-- <img src="assets/images/logo.png" alt="logo" /> -->
+        </a>
         <!-- Logo End -->
 
         <!-- Navbar -->
@@ -64,21 +68,7 @@
     </header>
     <!-------------------- Header Area (End) -------------------->
 
-
-
-    
-
-    <!-------------------- Home Area (Start) -------------------->
-    <section class="home" id="home">
-        <div class="box-container">
-           
-            <div class="content">
-                <div class="text">
-                        <h2>Album photos</h2>
-                        <h1>Photos of <span class="typing-text"></span></h1>
-                      
-</hr>
-<div class="slideshow-container">
+    <div class="slideshow-container"> 
 
         <div class="mySlides fade">
             <img src="album/a2.jpg" style="width:100%">
@@ -170,14 +160,33 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-</hr>
+
+    <!-------------------- Home Area (Start) -------------------->
+    <section class="home" id="home">
+        <div class="box-container">
+           
+            <div class="content">
+                <div class="text">
+                        <h2>Album photos</h2>
+                        <h1>Photos of <span class="typing-text"></span></h1>
+                        <p>Creative web developer offering 1+ years of experience providing high-impact web solutions
+                            for many different organizations.</p>
+                        <a href="#" class="btn">Other Photos <i class="fas fa-user"></i></a>
+                </div>
+            </div>        
+    </section>
+
+
     <!-------------------- Home Area (End) -------------------->
 
+   
 
 
     <!-------------------- About Area (Start) -------------------->
     
 
+       
+       
 
 
     <!-------------------- Contact Area (Start) -------------------->
@@ -277,27 +286,33 @@
 
 
     <!-- JQuery -->
-    <script src="../assets/vendors/jquery/jquery-3.6.0.js"></script>
+    <script src="assets/vendors/jquery/jquery-3.6.0.js"></script>
 
     <!-- SWIPER JS -->
-    <script src="../assets/vendors/swiper/swiper.js"></script>
+    <script src="assets/vendors/swiper/swiper.js"></script>
 
     <!-- Magnific-Popup JS -->
-    <script src="../assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/vendors/magnific-popup/jquery.magnific-popup.js"></script>
 
     <!-- Typed JS -->
-    <script src="../assets/vendors/typed/typed.js"></script>
+    <script src="assets/vendors/typed/typed.js"></script>
 
     <!-- Custom Script File -->
-    <script src="script2.js"></script>
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/js/scroll-spy.js"></script>
-    <script src="../assets/js/counter-up.js"></script>
-    <script src="../assets/js/portfolio.js"></script>
-    <script src="../assets/js/testi-slider.js"></script>
-    <script src="../assets/js/blog-slider.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scroll-spy.js"></script>
+    <script src="assets/js/counter-up.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/testi-slider.js"></script>
+    <script src="assets/js/blog-slider.js"></script>
     <!--Images 3d Carousel Script by Bholu-->
-  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="jquery.flipster.min.js"></script>
+    <script>
+        $('.carousel').flipster({
+            style:'carousel',
+            spacing: -0.3,
+        });
+    </script>
 
     <!---------------- Custom Script ---------------->
 
@@ -310,9 +325,9 @@
             loop: true
         });
     </script>
-
+ <script src="/script2.js"></script>
     <!-- Contact-Form Script -->
-    
+
 
 </body>
 
